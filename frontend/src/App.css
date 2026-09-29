@@ -1,0 +1,59 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1f2328;
+  background: #f6f8fa;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+select,
+button {
+  font: inherit;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  background: white;
+  cursor: pointer;
+}
+.card {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #d0d7de;
+}
+.options {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.options button {
+  width: 100%;
+  text-align: left;
+}
+.correct {
+  background: #dafbe1;
+  border-color: #1a7f37;
+}
+.wrong {
+  background: #ffebe9;
+  border-color: #cf222e;
+}
+.error {
+  color: #cf222e;
+}
+.explanation {
+  line-height: 1.5;
+}
+.options button:disabled {
+  color: inherit;
+  cursor: default;
+}
